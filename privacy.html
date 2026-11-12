@@ -1,0 +1,39 @@
+&; padding-top: 18px; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="./">Jarvis Galaxy</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective date: November 12, 2026</p>
+      <p>This policy explains how Jarvis Galaxy handles information when you connect a supported social account and view its analytics.</p>
+      <p class="notice">Before publishing this page, replace the contact placeholder below with a monitored support email address.</p>
+
+      <h2>1. Where your data is processed</h2>
+      <p>Jarvis Galaxy is currently a self-hosted application, rather than a centrally operated analytics service. When you run it, OAuth tokens and retrieved dashboard data are handled by the server you configured. If you use a hosted copy in the future, its operator controls that server and should identify themselves and explain their hosting arrangements here before launch.</p>
+
+      <h2>2. Information processed</h2>
+      <p>When you connect an account, the app requests the permissions shown by the provider's authorization screen. Depending on the provider and approved permissions, it may process basic account details, follower and engagement counts, recent post or video titles and statistics, and—where supported—public comments or messages. TikTok access is used to retrieve profile details and recent video information for analytics; this dashboard does not publish or edit TikTok content or send messages.</p>
+      <p>OAuth access and refresh tokens are stored on the configured server in <code>data/social-tokens.json</code> so the server can retrieve authorized data. Retrieved account data may be held temporarily in server memory for up to two minutes. Daily follower counts used for dashboard history are stored in <code>data/social-snapshots.json</code>; those snapshots remain until deleted from that server.</p>
+
+      <h2>3. How information is used and shared</h2>
+      <p>Information is used to retrieve and display the analytics you request and to maintain follower-history charts. The app does not sell personal information or use it for advertising. To provide the requested integration, account requests are sent to the provider you choose (such as TikTok, Google/YouTube, Meta/Instagram, or LinkedIn) under that provider's terms. The self-hosted app has no separate analytics or advertising tracker configured.</p>
+      <p>The dashboard loads the Inter typeface from Google Fonts. When your browser requests those font files, Google may receive connection information such as your IP address. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+      <h2>4. Retention and deletion</h2>
+      <p>Disconnecting an account removes its saved OAuth tokens from the configured server. It does not currently remove that account's historical follower snapshots. To delete all locally stored social data, stop the server and delete <code>data/social-tokens.json</code> and <code>data/social-snapshots.json</code> from its data directory. You may also revoke the app's access through the provider's security or connected-app settings. Provider-side records are governed by the provider's policies.</p>
+
+      <h2>5. Security</h2>
+      <p>Tokens are intended to remain on the configured server and should not be committed to source control or shared. No method of storage or transmission is completely secure. Anyone operating a deployment is responsible for restricting access to its server and protecting its configuration and data files.</p>
+
+      <h2>6. Your choices and third-party policies</h2>
+      <p>You choose whether to connect an account and can disconnect it or revoke access. Data obtained through Google APIs is used only to provide or improve user-facing features, is not sold or used for advertising, and is not transferred except as necessary to provide or secure the service, as described in this policy and Google's API Services User Data Policy, including its Limited Use requirements. Each third-party provider handles information under its own privacy policy.</p>
+
+      <h2>7. Changes and contact</h2>
+      <p>This policy may be updated as the application changes. The revised date will appear on this page.</p>
+      <p>Privacy questions or requests: <strong>[Add a public support email before publishing]</strong>.</p>
+
+      <footer><a href="./terms.html">Terms of Service</a></footer>
+    </main>
+  </body>
+</html>
